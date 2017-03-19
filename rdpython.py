@@ -38,7 +38,7 @@ def check_port(port):
     try:
         assert int(port) >= 1000
         return False
-    except AssertionError:
+    except (AssertionError, ValueError}:
         return True
 
 
